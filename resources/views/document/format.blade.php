@@ -5,7 +5,7 @@
 @endsection
 
 @section('content')
-    <div class="pt-5 pb-5">
+    <div class="document pt-5 pb-5">
         @include('document.page1')
         @include('document.page2')
         @include('document.page3')
