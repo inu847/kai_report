@@ -68,4 +68,10 @@ class DashboardController extends Controller
         return $pdf->download('page4.pdf');
         // return view('pages.page4');
     }
+
+    public function exportSwakelola()
+    {
+        // return Excel::download(new InvoicesExport, 'invoices.xlsx');
+        return view('pages.swakelola');
+    }
 }

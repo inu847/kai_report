@@ -27,4 +27,5 @@ Route::prefix('kai')->controller(DashboardController::class)->group(function ()
     Route::get('page2-download', 'page2Download')->name('dashboard.page2Download');
     Route::get('page3-download', 'page3Download')->name('dashboard.page3Download');
     Route::get('page4-download', 'page4Download')->name('dashboard.page4Download');
+    Route::get('export-swakelola', 'exportSwakelola')->name('export.swakelola');
 });
