@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Exports\OrderExport;
+use App\Exports\SurveiSwakelola;
 use App\Models\OrderGroup;
 use App\Models\OrderItem;
 use Barryvdh\DomPDF\Facade\Pdf;
@@ -71,7 +72,7 @@ class DashboardController extends Controller
 
     public function exportSwakelola()
     {
-        // return Excel::download(new InvoicesExport, 'invoices.xlsx');
-        return view('pages.swakelola');
+        return Excel::download(new SurveiSwakelola, 'survei swakelola.xlsx');
+        // return view('pages.swakelola');
     }
 }

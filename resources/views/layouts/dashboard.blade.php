@@ -48,7 +48,8 @@
   /* STYLE CUSTOM */
   .card{
       width: 595px;
-      height: 842px;
+      /* height: 842px; */
+      height: auto;
       margin: 0 auto;
       float: none;
       margin-bottom: 10px;
@@ -137,6 +138,9 @@
         margin-right: auto;
         font-size: 23px;
         font-weight: 900;
+    }
+    .no-padding th, .no-padding td{
+        padding: 0px;
     }
     
     /* RESPONSIVE DOCUMENT */
@@ -255,6 +259,13 @@
             <a href="{{ route('dashboard.page4Download') }}" class="nav-link">
               <i class="far fa-file-pdf"></i>
               <p>Document Page 4</p>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="{{ route('export.swakelola') }}" class="nav-link">
+              <i class="fas fa-table"></i>
+              <p>Document Swakelola</p>
             </a>
           </li>
         </ul>
