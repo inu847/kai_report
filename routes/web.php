@@ -22,6 +22,11 @@ Route::get('/', function () {
 Route::prefix('kai')->controller(DashboardController::class)->group(function ()
 {
     Route::get('', 'index')->name('dashboard.index');
+    Route::get('document-preview', 'documentPreview')->name('dashboard.documentPreview');
+    Route::get('form', 'form')->name('dashboard.form');
+    Route::get('findPegawai/{id}', 'findPegawai')->name('dashboard.findPegawai');
+    Route::post('document/store', 'store')->name('dashboard.store');
+    Route::get('document/{id}', 'fullPdf')->name('dashboard.fullPdf');
     Route::get('format-document', 'format')->name('dashboard.format');
     Route::get('page1-download', 'page1Download')->name('dashboard.page1Download');
     Route::get('page2-download', 'page2Download')->name('dashboard.page2Download');

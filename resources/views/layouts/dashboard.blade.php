@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>@yield('title') | KAI REPORT</title>
+  <title>@yield('title') | BTP JABAR</title>
 
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -35,7 +35,7 @@
   [class*=sidebar-dark-], .navbar-white{
     background-color: #174d83;
   }
-  .content-wrapper>.content, .main-footer{
+  .content-wrapper, .main-footer{
     background-color: #221209eb;
   }
   .main-footer{
@@ -212,7 +212,7 @@
     <!-- Brand Logo -->
     <a href="index3.html" class="brand-link">
       <img src="{{ asset('dist/img/AdminLTELogo.png')}}" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
-      <span class="brand-text font-weight-light">KAI REPORT</span>
+      <span class="brand-text font-weight-light">BTP JABAR</span>
     </a>
 
     <!-- Sidebar -->
@@ -220,55 +220,7 @@
 
       <!-- Sidebar Menu -->
       <nav class="mt-2">
-        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
-          <li class="nav-item">
-            <a href="{{ route('dashboard.index') }}" class="nav-link">
-              <i class="far fa-circle nav-icon"></i>
-              <p>Dashboard</p>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="{{ route('dashboard.format') }}" class="nav-link">
-              <i class="far fa-circle nav-icon"></i>
-              <p>Format Document</p>
-            </a>
-          </li>
-
-          <li class="nav-item">
-            <a href="{{ route('dashboard.page1Download') }}" class="nav-link">
-              <i class="far fa-file-pdf"></i>
-              <p>Document Page 1</p>
-            </a>
-          </li>
-
-          <li class="nav-item">
-            <a href="{{ route('dashboard.page2Download') }}" class="nav-link">
-              <i class="far fa-file-pdf"></i>
-              <p>Document Page 2</p>
-            </a>
-          </li>
-
-          <li class="nav-item">
-            <a href="{{ route('dashboard.page3Download') }}" class="nav-link">
-              <i class="far fa-file-pdf"></i>
-              <p>Document Page 3</p>
-            </a>
-          </li>
-
-          <li class="nav-item">
-            <a href="{{ route('dashboard.page4Download') }}" class="nav-link">
-              <i class="far fa-file-pdf"></i>
-              <p>Document Page 4</p>
-            </a>
-          </li>
-
-          <li class="nav-item">
-            <a href="{{ route('export.swakelola') }}" class="nav-link">
-              <i class="fas fa-table"></i>
-              <p>Document Swakelola</p>
-            </a>
-          </li>
-        </ul>
+        @include('layouts.sidebar')
       </nav>
       <!-- /.sidebar-menu -->
     </div>
@@ -290,7 +242,7 @@
   </div>
   <!-- /.content-wrapper -->
   <footer class="main-footer">
-    <strong>KAI REPORT &copy; {{now()->format('Y')}}- {{now()->format('Y')+1}}.</strong>
+    <strong>BALAI TEKNIK PERKERETAAPIAN KELAS I WILAYAH JAWA BAGIAN BARAT &copy; {{now()->format('Y')}}- {{now()->format('Y')+1}}.</strong>
   </footer>
   
   <!-- Control Sidebar -->
@@ -354,7 +306,7 @@
       "responsive": true,
       "lengthChange": false,
       "autoWidth": false,
-      "paging": false,
+      "paging": true,
       "info": false,
       "buttons": ["copy", "csv", "excel", "pdf", "print", "colvis"]
     }).buttons().container().appendTo('#example1_wrapper .col-md-6:eq(0)');

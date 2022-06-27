@@ -1,35 +1,30 @@
 <?php
-
-use App\Models\OrderGroup;
-use App\Models\OrderItem;
-
-    function getPaymentMethod($val)
-    {
-        $casting = explode(":", $val);
-        $casting = explode(",", $casting[1]);
-        $result = str_replace('"', '', $casting[0]);
-
-        return $result;
-    }
-
-    function findPaymentMethod($id)
-    {
-        $orderGroup = OrderGroup::findOrFail($id);
-        $paymentMethod = $orderGroup->bill_distribution;
-        if ($paymentMethod) {
-            $result = getPaymentMethod($paymentMethod);
-        }else {
-            $result = "-";
-        }
-
-        return $result;
-    }
-
-    function customerName($id)
-    {
-        $orderGroup = OrderGroup::findOrFail($id);
-        $result = $orderGroup->customer_name;
-
-        return $result;
+    function terbilang($x){
+        $x = abs($x);
+        $angka = array("", "satu", "dua", "tiga", "empat", "lima",
+        "enam", "tujuh", "delapan", "sembilan", "sepuluh", "sebelas");
+        $temp = "";
+        if ($x <12) {
+            $temp = " ". $angka[$x];
+        } else if ($x <20) {
+            $temp = terbilang($x - 10). " belas";
+        } else if ($x <100) {
+            $temp = terbilang($x/10)." puluh". terbilang($x % 10);
+        } else if ($x <200) {
+            $temp = " seratus" . terbilang($x - 100);
+        } else if ($x <1000) {
+            $temp = terbilang($x/100) . " ratus" . terbilang($x % 100);
+        } else if ($x <2000) {
+            $temp = " seribu" . terbilang($x - 1000);
+        } else if ($x <1000000) {
+            $temp = terbilang($x/1000) . " ribu" . terbilang($x % 1000);
+        } else if ($x <1000000000) {
+            $temp = terbilang($x/1000000) . " juta" . terbilang($x % 1000000);
+        } else if ($x <1000000000000) {
+            $temp = terbilang($x/1000000000) . " milyar" . terbilang(fmod($x,1000000000));
+        } else if ($x <1000000000000000) {
+            $temp = terbilang($x/1000000000000) . " trilyun" . terbilang(fmod($x,1000000000000));
+        }     
+            return $temp;
     }
 ?>
