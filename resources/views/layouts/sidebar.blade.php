@@ -56,7 +56,7 @@
     </li>
 
     <li class="nav-item">
-      <a href="{{ route('export.swakelola') }}" class="nav-link">
+      <a href="{{ route('swakelola.index') }}" class="nav-link">
         <i class="fas fa-table"></i>
         <p>Dokumen Swakelola</p>
       </a>

@@ -17,7 +17,7 @@ class DashboardController extends Controller
 {
     public function index(Request $request)
     {
-        $documents = Document::get();
+        $documents = Document::orderBy('id', 'desc')->get();
 
         return view('document.index', ['documents' => $documents]);
     }
@@ -130,9 +130,26 @@ class DashboardController extends Controller
         // return view('pages.page4');
     }
 
-    public function exportSwakelola()
+    public function exportSwakelola($id)
     {
-        return Excel::download(new SurveiSwakelola, 'survei swakelola.xlsx');
-        // return view('pages.swakelola');
+        // $document = Document::findOrFail($id);
+        // $data['total_transport'] = 0;
+        // $data['total_uang_penginapan'] = 0;
+        // $data['total_uang_harian'] = 0;
+        // $data['total_uang_jumlah'] = 0;
+
+        // foreach (json_decode($document->pengikut) as $key => $pengikut) {
+        //     $data['total_transport'] += $document->biaya_transport;
+        //     $data['total_uang_penginapan'] += $document->biaya_penginapan;
+        //     $data['total_uang_harian'] += $document->biaya_uang_harian;
+        //     $data['total_uang_jumlah'] += $document->jumlah;
+        // }
+        // return view('pages.swakelola', $data, ['document' => $document]);
+        return Excel::download(new SurveiSwakelola($id), 'survei swakelola.xlsx');
+    }
+
+    public function swakelola()
+    {
+        return view('pages.swakelola');
     }
 }

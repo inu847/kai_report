@@ -39,6 +39,7 @@
                                             {{-- <li><a class="dropdown-item" href="#">Edit</a></li>
                                             <li><a class="dropdown-item" href="#">Delete</a></li> --}}
                                             <li><a class="dropdown-item" href="{{ route('dashboard.fullPdf', [$document->id]) }}">Export Pdf</a></li>
+                                            <li><a class="dropdown-item" href="{{ route('export.swakelola', [$document->id]) }}">Export Excel</a></li>
                                         </div>
                                     </div>
                                 </td>

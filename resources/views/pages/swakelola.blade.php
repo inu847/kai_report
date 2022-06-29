@@ -10,9 +10,8 @@
             <th style="text-align: center; font-size: 20px; height: 50px;" colspan="19">DAFTAR NOMINATIF PERJALANAN DINAS</th>
         </tr>
         <tr>
-            <td>Akun</td>
-            <td>:</td>
-            <td>4601.EBD.955.052.D.524111</td>
+            <td style="font-weight: 900;">Akun :</td>
+            <td style="font-weight: 900;">4601.EBD.955.052.D.524111</td>
         </tr>
         <tr>
             <td colspan="5">Dalam Rangka Monitoring Hasil Penertiban dan Pembebasan Lahan di Lintas Paledang s.d Cicurug</td>
@@ -23,62 +22,59 @@
 <table border="1px">
     <thead>
         <tr>
-            <th style="background-color: #fcd5b5; height:30px; border:2px solid #000; ">NO</th>
-            <th style="background-color: #fcd5b5; height:30px; border:2px solid #000; ">NAMA</th>
-            <th style="background-color: #fcd5b5; height:30px; border:2px solid #000; " colspan="5">NOMOR SPT TANGGAL SPT</th>
-            <th style="background-color: #fcd5b5; height:30px; border:2px solid #000; ">TUJUAN</th>
-            <th style="background-color: #fcd5b5; height:30px; border:2px solid #000; ">LAMANYA PERJALANAN</th>
-            <th style="background-color: #fcd5b5; height:30px; border:2px solid #000; " colspan="5">TANGGAL PERJALANAN DINAS</th>
-            <th style="background-color: #fcd5b5; height:30px; border:2px solid #000; ">TRANSPORT</th>
-            <th style="background-color: #fcd5b5; height:30px; border:2px solid #000; ">PENGINAPAN</th>
-            <th style="background-color: #fcd5b5; height:30px; border:2px solid #000; ">UANG HARIAN</th>
-            <th style="background-color: #fcd5b5; height:30px; border:2px solid #000; ">JUMLAH</th>
-            <th style="background-color: #fcd5b5; height:30px; border:2px solid #000; ">TTD</th>
+            <th style="background-color: #fcd5b5; height:30px; border:2px solid #000; font-weight: 900;">NO</th>
+            <th style="background-color: #fcd5b5; height:30px; border:2px solid #000; font-weight: 900;">NAMA</th>
+            <th style="background-color: #fcd5b5; height:30px; border:2px solid #000; font-weight: 900;" colspan="5">NOMOR SPT TANGGAL SPT</th>
+            <th style="background-color: #fcd5b5; height:30px; border:2px solid #000; font-weight: 900;">TUJUAN</th>
+            <th style="background-color: #fcd5b5; height:30px; border:2px solid #000; font-weight: 900;">LAMANYA PERJALANAN</th>
+            <th style="background-color: #fcd5b5; height:30px; border:2px solid #000; font-weight: 900;" colspan="5">TANGGAL PERJALANAN DINAS</th>
+            <th style="background-color: #fcd5b5; height:30px; border:2px solid #000; font-weight: 900;">TRANSPORT</th>
+            <th style="background-color: #fcd5b5; height:30px; border:2px solid #000; font-weight: 900;">PENGINAPAN</th>
+            <th style="background-color: #fcd5b5; height:30px; border:2px solid #000; font-weight: 900;">UANG HARIAN</th>
+            <th style="background-color: #fcd5b5; height:30px; border:2px solid #000; font-weight: 900;">JUMLAH</th>
+            <th style="background-color: #fcd5b5; height:30px; border:2px solid #000; font-weight: 900;">TTD</th>
         </tr>
     </thead>
     <tbody>
         <tr>
-            <td style="text-align: center; border: 5px solid #000;">1</td>
-            <td style="text-align: center; border: 5px solid #000;">2</td>
-            <td style="text-align: center; border: 5px solid #000;" colspan="5">3</td>
-            <td style="text-align: center; border: 5px solid #000;">4</td>
-            <td style="text-align: center; border: 5px solid #000;">5</td>
-            <td style="text-align: center; border: 5px solid #000;" colspan="5">6</td>
-            <td style="text-align: center; border: 5px solid #000;">7</td>
-            <td style="text-align: center; border: 5px solid #000;">8</td>
-            <td style="text-align: center; border: 5px solid #000;">9</td>
-            <td style="text-align: center; border: 5px solid #000;">10</td>
-            <td style="text-align: center; border: 5px solid #000;">11</td>
+            <td style="text-align: center; border: 5px solid #000;font-weight: 900;">1</td>
+            <td style="text-align: center; border: 5px solid #000;font-weight: 900;">2</td>
+            <td style="text-align: center; border: 5px solid #000;font-weight: 900;" colspan="5">3</td>
+            <td style="text-align: center; border: 5px solid #000;font-weight: 900;">4</td>
+            <td style="text-align: center; border: 5px solid #000;font-weight: 900;">5</td>
+            <td style="text-align: center; border: 5px solid #000;font-weight: 900;" colspan="5">6</td>
+            <td style="text-align: center; border: 5px solid #000;font-weight: 900;">7</td>
+            <td style="text-align: center; border: 5px solid #000;font-weight: 900;">8</td>
+            <td style="text-align: center; border: 5px solid #000;font-weight: 900;">9</td>
+            <td style="text-align: center; border: 5px solid #000;font-weight: 900;">10</td>
+            <td style="text-align: center; border: 5px solid #000;font-weight: 900;">11</td>
         </tr>
-        <tr>
-            <td>-</td>
-            <td>-</td>
-            <td>-</td>
-            <td>-</td>
-            <td>-</td>
-            <td>-</td>
-            <td>-</td>
-            <td>-</td>
-            <td>-</td>
-            <td>-</td>
-            <td>-</td>
-            <td>-</td>
-            <td>-</td>
-            <td>-</td>
-            <td>-</td>
-            <td>-</td>
-            <td>-</td>
-            <td>-</td>
-            <td>-</td>
-        </tr>
+        @foreach (json_decode($document->pengikut) as $key => $pengikut)
+            @php
+                $dataPengikut = \App\Models\Pegawai::findOrFail($pengikut);
+            @endphp
+            <tr>
+                <td style="text-align: center; border: 5px solid #000;">{{ $key+1 }}</td>
+                <td style="text-align: center; border: 5px solid #000;">{{ $dataPengikut->nama }}</td>
+                <td style="text-align: center; border: 5px solid #000;"colspan="5">SP {{ $document->nomor_spt }} / TAHUN {{ now()->format('Y') }}</td>
+                <td style="text-align: center; border: 5px solid #000;">{{ $document->tempat_berangkat."-".$document->tempat_tujuan }}</td>
+                <td style="text-align: center; border: 5px solid #000;">{{ $document->lama_pd." (".terbilang($document->lama_pd).") hari" }}</td>
+                <td style="text-align: center; border: 5px solid #000;" colspan="5">{{ Carbon\Carbon::parse($document->tanggal_berangkat)->format('d M Y')." - ".Carbon\Carbon::parse($document->tanggal_kembali)->format('d M Y') }}</td>
+                <td style="text-align: center; border: 5px solid #000;">Rp.{{ number_format($document->biaya_transport) }}</td>
+                <td style="text-align: center; border: 5px solid #000;">Rp.{{ number_format($document->biaya_penginapan) }}</td>
+                <td style="text-align: center; border: 5px solid #000;">Rp.{{ number_format($document->biaya_uang_harian) }}</td>
+                <td style="text-align: center; border: 5px solid #000;">Rp.{{ number_format($document->jumlah) }}</td>
+                <td style="text-align: center; border: 5px solid #000;"></td>
+            </tr>
+        @endforeach
     </tbody>
     <tfoot>
         <tr>
-            <th colspan="14" style="text-align: right;">Total</th>
-            <th>Rp.90,000</th>
-            <th>Rp.90,000</th>
-            <th>Rp.90,000</th>
-            <th>Rp.90,000</th>
+            <th colspan="14" style="text-align: right;">JUMLAH</th>
+            <th>Rp.{{ number_format($total_transport) }}</th>
+            <th>Rp.{{ number_format($total_uang_penginapan) }}</th>
+            <th>Rp.{{ number_format($total_uang_harian) }}</th>
+            <th>Rp.{{ number_format($total_uang_jumlah) }}</th>
         </tr>
     </tfoot>
 </table>

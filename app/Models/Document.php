@@ -28,7 +28,8 @@ class Document extends Model
                             'biaya_uang_harian',
                             'biaya_transport',
                             'jumlah',
-                            'beban_mak'];
+                            'beban_mak',
+                            'nomor_spt'];
 
     public function pegawai()
     {
