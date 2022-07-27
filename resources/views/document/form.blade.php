@@ -114,7 +114,8 @@
     </div>
 @endsection
 
-<script src="{{ asset('plugins/jquery/jquery.min.js') }}"></script>
+{{-- <script src="{{ asset('plugins/jquery/jquery.min.js') }}"></script> --}}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script>
     $(document).on('change', '#pegawai', function (e) {
         var id = $(this).val();
