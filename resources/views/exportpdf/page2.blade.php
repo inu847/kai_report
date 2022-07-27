@@ -124,13 +124,13 @@
             <div class="ttd">
                 <p>Pejabat Pembuat Komitmen</p>
                 <div class="con-1">
-                    RITA WIDAYANTI, S.E., M.M.
+                    {{ \App\Models\Pegawai::findOrFail(17)->nama }}
                 </div>
                 <div class="con-2">
-                    Penata Tk.I (III/d)
+                    {{ \App\Models\Pegawai::findOrFail(17)->pangkat }}
                 </div>
                 <div class="con-2">
-                    NIP. 19720112 199203 2 002
+                    NIP. {{ \App\Models\Pegawai::findOrFail(17)->nip }}
                 </div>
             </div>
         </div>

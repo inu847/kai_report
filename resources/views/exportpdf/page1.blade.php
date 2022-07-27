@@ -31,7 +31,7 @@
                 <tr>
                     <td>1</td>
                     <td>Pejabat Pembuat Komitmen</td>
-                    <td>RITA WIDAYANTI, S.E., M.M.</td>
+                    <td>{{ \App\Models\Pegawai::findOrFail(17)->nama }}.</td>
                 </tr>
 
                 <tr>
@@ -191,13 +191,13 @@
             </tr>
 
             <tr>
-                <td colspan="3" class="con-1">RITA WIDAYANTI, S.E., M.M</td>
+                <td colspan="3" class="con-1">{{ \App\Models\Pegawai::findOrFail(17)->nama }}</td>
             </tr>
             <tr class="con-2">
-                <td colspan="3">Penata Tk.I  (III/d)</td>
+                <td colspan="3">{{ \App\Models\Pegawai::findOrFail(17)->pangkat }}</td>
             </tr>
             <tr class="con-2">
-                <td colspan="3">NIP. 19720112 199203 2 002</td>
+                <td colspan="3">NIP. {{ \App\Models\Pegawai::findOrFail(17)->nip }}</td>
             </tr>
         </table>
     </div>

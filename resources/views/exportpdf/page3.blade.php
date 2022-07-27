@@ -85,17 +85,17 @@
                 </tr>
 
                 <tr>
-                    <td class="con-1">RITA WIDAYANTI, S.E., M.M.</td>
+                    <td class="con-1">{{ \App\Models\Pegawai::findOrFail(17)->nama }}</td>
                     <td class="con-1">ENTIN SUTINAH, SE.</td>
                     <td class="con-1">{{ $document->pegawai->nama }}</td>
                 </tr>
                 <tr class="con-2">
-                    <td>Penata Tk.I (III/d)</td>
+                    <td>{{ \App\Models\Pegawai::findOrFail(17)->pangkat }}</td>
                     <td>Penata Muda (III/a)</td>
                     <td>{{ $document->pegawai->pangkat }}</td>
                 </tr>
                 <tr class="con-2">
-                    <td>NIP. 19720112 199203 2 002</td>
+                    <td>NIP. {{ \App\Models\Pegawai::findOrFail(17)->nip }}</td>
                     <td>NIP. 19840628 200912 2 004</td>
                     <td>{{ $document->pegawai->nip }}</td>
                 </tr>
