@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Exports\OrderExport;
 use App\Exports\SurveiSwakelola;
+use App\Models\Biaya;
 use App\Models\Document;
 use App\Models\OrderGroup;
 use App\Models\OrderItem;
@@ -30,8 +31,9 @@ class DashboardController extends Controller
     public function form()
     {
         $pegawais = Pegawai::get();
+        $biayas = Biaya::get();
 
-        return view('document.form', ['pegawais' => $pegawais]);
+        return view('document.form', ['pegawais' => $pegawais, 'biayas' => $biayas]);
     }
 
     public function findPegawai($id)
@@ -46,8 +48,9 @@ class DashboardController extends Controller
         $tanggal_berangkat = new DateTime($data['tanggal_berangkat']);
         $tanggal_kembali = new DateTime($data['tanggal_kembali']);
         $selisihHari = (int)$tanggal_berangkat->diff($tanggal_kembali)->format('%a');
-        $biaya_penginapan = 530000 * $selisihHari;
-        $biaya_uang_harian = 430000 * $selisihHari;
+        $biaya_penginapan = $data['biaya_penginapan'] * $selisihHari;
+        $biaya_harian = Biaya::findOrFail($data['tempat_tujuan']);
+        $biaya_uang_harian = $biaya_harian->biaya * $selisihHari;
         $jumlah = $biaya_penginapan + $biaya_uang_harian + $data['biaya_transport'];
         $pengikuts = $data['pengikut'];
         array_push($pengikuts, $data['pegawai']);
@@ -97,6 +100,7 @@ class DashboardController extends Controller
     public function fullPdf($id)
     {
         $document = Document::findOrFail($id);
+        $document['tempat_tujuan'] = Biaya::findOrFail($document['tempat_tujuan'])->provinsi;
         $pdf = PDF::loadView('exportpdf.full', ['document' => $document])->setOptions(['defaultFont' => 'sans-serif']);
         return $pdf->setPaper('A4', 'horizontal')->download($document->pegawai->nama.'.pdf');
         return view('exportpdf.full', ['document' => $document]);

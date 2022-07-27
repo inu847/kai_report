@@ -52,7 +52,12 @@
                 </div> --}}
                 <div class='form-group'>
                     <label for=''>Tempat tujuan</label>
-                    <input type='text' class='form-control' name='tempat_tujuan' id='' placeholder=''>
+                    <select name="tempat_tujuan" id="" class='form-control'>
+                        <option value="" selected disabled>pilih Tempat Tujuan</option>
+                        @foreach ($biayas as $biaya)
+                            <option value="{{ $biaya->id }}">{{ $biaya->provinsi }}</option>
+                        @endforeach
+                    </select>
                 </div>
                 {{-- <div class='form-group'>
                     <label for=''>Lamanya Perjalanan Dinas</label>
@@ -89,10 +94,10 @@
                     <label for=''>Lampiran SPD Nomor</label>
                     <input type='text' class='form-control' name='nomor_spd' id='' placeholder=''>
                 </div>
-                {{-- <div class='form-group'>
-                    <label for=''>Lama penginapan @ Rp. 530.000,-</label>
-                    <input type='date' class='form-control' name='biaya_penginapan' id='' placeholder=''>
-                </div> --}}
+                <div class='form-group'>
+                    <label for=''>Biaya penginapan</label>
+                    <input type='number' class='form-control' name='biaya_penginapan' id='' placeholder=''>
+                </div>
                 <div class='form-group'>
                     <label for=''>Biaya Transport PP</label>
                     <input type='number' class='form-control' name='biaya_transport' id='' placeholder=''>

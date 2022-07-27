@@ -29,13 +29,13 @@
                 <tbody>
                     <tr>
                         <td width="10px">1</td>
-                        <td width="220px">Biaya Penginapan selama {{ $document->lama_pd }} malam @ Rp. 430.000,-</td>
+                        <td width="220px">Biaya Penginapan selama {{ $document->lama_pd }} hari @ Rp. {{ number_format($document->biaya_penginapan/$document->lama_pd) }},-</td>
                         <td>Rp.{{ number_format($document->biaya_penginapan) }},-</td>
                         <td>-</td>
                     </tr>
                     <tr>
                         <td width="10px">2</td>
-                        <td width="220px">Biaya Uang Harian selama {{ $document->lama_pd }} malam @ Rp. 530.000,-</td>
+                        <td width="220px">Biaya Uang Harian selama {{ $document->lama_pd }} hari @ Rp. {{ number_format($document->biaya_uang_harian/$document->lama_pd) }},-</td>
                         <td>Rp.{{ number_format($document->biaya_uang_harian) }},-</td>
                         <td>-</td>
                     </tr>
