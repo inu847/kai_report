@@ -42,24 +42,24 @@
   
     /* STYLE CUSTOM */
     .card{
-        width: 595px;
+        width: 700px;
         /* height: 842px; */
         margin: 0 auto;
         float: none;
         margin-bottom: 10px;
         /* zoom: 90%; */
         font-family: Arial;
-        font-size: 10.5px;
+        font-size: 12px;
     }
     th, td{
-      font-size: 10.5px !important;
+      font-size: 12px !important;
     }
     .body{
         padding: 20px;
         padding-top: 5px;
     }
     .title{
-        font-size: 12px !important;
+        font-size: 15px !important;
         font-weight: 900;
     }
     .clear{
@@ -67,7 +67,7 @@
     }
   
     .table-header td, .table-header th{
-        padding: 5px !important;
+        padding: 0px !important;
     }
     hr{
       border-top: 3px solid #000;
